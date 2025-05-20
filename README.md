@@ -81,14 +81,54 @@ After Running the Script
 6 hours to pass connectivity checks
 24 hours to start earning rewards
 
+4. BACK UP YOUR PRIVATE KEY 
+
+On your running node (phone or VPS), run:
+```bash
+cat ~/.blockcast/certs/gw_challenge.key
+```
+This is your private key.
+
+Now do:
+```bash
+cp ~/.blockcast/certs/gw_challenge.key ~/gw_challenge.key
+```
+Then move or download gw_challenge.key to your local device or safe storage (Google Drive, USB, etc.).
+
+
+---
+
+2. RESTORE ON NEW VPS / NEW MACHINE
+
+After setting up Docker and running the node once (docker compose up -d), stop it:
+
+docker compose down
+
+Then replace the auto-generated key with your backed up key:
+```bash
+
+cp gw_challenge.key ~/.blockcast/certs/gw_challenge.key
+```
+
+Restart your node:
+```bash
+docker compose up -d
+```
+
+You should now see the same Hardware ID when you run:
+```bash
+
+docker compose exec blockcastd blockcastd init
+```
+
 ---
 
 Important
 
-Docker is required. Install it first: https://www.docker.com/products/docker-desktop
+Do not share your gw_challenge.key — it gives access to your node rewards.
 
-Backup your private key from:
-~/.blockcast/certs/gw_challenge.key
+---
+
 ---
 To restart the node after a system reboot:
 ```bash
