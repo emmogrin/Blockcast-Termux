@@ -89,13 +89,23 @@ Docker is required. Install it first: https://www.docker.com/products/docker-des
 
 Backup your private key from:
 ~/.blockcast/certs/gw_challenge.key
-
 ---
-To restart the node incase or after a system reboot:
+To restart the node after a system reboot (phone users make sure step 3 is done before using this, if you feel confused check bio on Twitter and join the tg for more clearance thanks:
  ```bash
-docker compose up -d
+ cd blockcast-beacon-auto && cd beacon-docker-compose
+```
+```bash
+ docker compose up -d
  ```
 This will resume your Blockcast node without resetting your keys or registration.
+
+---
+To check logs :
+```bash
+docker compose logs -f blockcastd
+```
+most variables would have successful attached to them.
+and it would display online in the main site.
 
 Credits
 
