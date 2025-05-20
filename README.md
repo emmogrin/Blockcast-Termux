@@ -90,7 +90,19 @@ Docker is required. Install it first: https://www.docker.com/products/docker-des
 Backup your private key from:
 ~/.blockcast/certs/gw_challenge.key
 ---
-To restart the node after a system reboot (phone users make sure step 3 is done before using this, if you feel confused check bio on Twitter and join the tg for more clearance thanks:
+To restart the node after a system reboot:
+```bash
+cd qemu-debian 
+```
+```bash
+qemu-system-x86_64 \
+  -m 2048 \
+  -smp 2 \
+  -drive file=debian-11.qcow2,format=qcow2 \
+  -net nic -net user,hostfwd=tcp::2222-:22 \
+  -nographic
+```
+
  ```bash
  cd blockcast-beacon-auto && cd beacon-docker-compose
 ```
