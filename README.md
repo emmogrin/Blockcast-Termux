@@ -146,6 +146,10 @@ qemu-system-x86_64 \
   -net nic -net user,hostfwd=tcp::2222-:22 \
   -nographic
 ```
+login: root
+```bash
+root
+```
 
  ```bash
  cd blockcast-beacon-auto && cd beacon-docker-compose
