@@ -36,6 +36,10 @@ qemu-system-x86_64 \
 
 ```
 Login: root
+```bash
+root
+```
+
 
 ---
 
