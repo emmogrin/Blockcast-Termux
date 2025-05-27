@@ -82,7 +82,8 @@ After Running the Script
 6 hours to pass connectivity checks
 24 hours to start earning rewards
 
-4. BACK UP YOUR PRIVATE KEY 
+
+4. BACK UP YOUR PRIVATE KEY ( YOU DON'T NEED TO STRESS ON THIS, IF YOUR DEVICE IS SECURED)
 
 On your running node (phone or VPS), run:
 ```bash
@@ -99,7 +100,7 @@ Then move or download gw_challenge.key to your local device or safe storage (Goo
 
 ---
 
-2. RESTORE ON NEW VPS / NEW MACHINE
+2. RESTORE ON NEW VPS / NEW MACHINE ( SKIP IF YOU ARE NOT CHANGING DEVICES)
 
 After setting up Docker and running the node once (docker compose up -d), stop it:
 
