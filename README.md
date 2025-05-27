@@ -60,8 +60,8 @@ curl -fsSL https://get.docker.com | sh
 Step 5: Clone & Run Blockcast Installer
 
 ```bash
-git clone https://github.com/emmogrin/blockcast-beacon-auto.git
-cd blockcast-beacon-auto
+git clone https://github.com/emmogrin/Blockcast-Termux.git
+cd Blockcast-Termux
 chmod +x blockcast-installer.sh
 ./blockcast-installer.sh
 ```
