@@ -53,9 +53,6 @@ apt install curl wget git build-essential -y
 ```bash
 curl -fsSL https://get.docker.com | sh
 ```
-```bash
-dockerd &
-```
 
 
 ---
