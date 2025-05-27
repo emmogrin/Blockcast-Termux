@@ -62,8 +62,8 @@ Step 5: Clone & Run Blockcast Installer
 ```bash
 git clone https://github.com/emmogrin/blockcast-beacon-auto.git
 cd blockcast-beacon-auto
-chmod +x blockcast-beacon-install.sh
-./blockcast-beacon-install.sh
+chmod +x blockcast-installer.sh
+./blockcast-installer.sh
 ```
 
 ---
